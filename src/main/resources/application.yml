@@ -1,0 +1,18 @@
+server:
+  port: 8080
+cxf:
+  path: /services/
+  servlet.init:
+    service-list-path: /info
+  jaxrs:
+    component-scan: true
+spring:
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    hibernate.ddl-auto: none
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: postgres
